@@ -10,7 +10,16 @@ namespace tpmodul5_1302213120
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string namaPanggilan = "Walid";
+            HaloGeneric.SapaUser(namaPanggilan);
+        }
+    }
+
+    public class HaloGeneric
+    {
+        public static void SapaUser<T>(T input)
+        {
+            Console.WriteLine("Halo user " + input);
         }
     }
 }
